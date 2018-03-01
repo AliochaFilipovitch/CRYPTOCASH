@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CRYPTOCASH">
+    <meta name="author" content="Aliocha">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>CRYPTOCASH</title>
+</head>
+<body>
+   
+<nav class="navbar navbar-dark bg-dark">
+  <span class="navbar-brand mb-0 h1">CRYPTOCASH</span>
+</nav>
+
+<div style="padding: 0.5%;">
+  <div class="card-columns">
+
+    <div card-include-html="../html/readMe.html"></div>
+
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Time</h3>
+        <p class="card-text">
+          <div id="time"></div>
+          <button type="button" class="btn btn-primary btn-sm" id="refreshTime">Refresh</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Average of Market</h3>
+        <p class="card-text">
+          <div id="average"></div>
+          <button type="button" class="btn btn-primary btn-sm" id="refreshAverage">Refresh</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Simulator</h3>
+        <p class="card-text">
+          <form>
+            <input class="form-control form-control-sm" type="text" placeholder="Crypto"><br>
+            <input class="form-control form-control-sm" type="text" placeholder="Amount"><br>
+            <button type="submit" class="btn btn-primary btn-sm">Ok</button>
+          </form>
+          <div id="simulator"></div>
+        </p>
+      </div>
+    </div>
+
+    <!--Your card here
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Name of your card</h3>
+        <p class="card-text">
+          <div id="idOfYourCard"></div>
+          <button type="button" class="btn btn-primary btn-sm" id="refreshYourCard">Refresh</button>
+        </p>
+      </div>
+    </div>-->
+
+    <div card-include-html="../html/create.html"></div>
+
+  </div>
+</div>
+
+<!-- scripts -->
+<script src="../js/function.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/time.js"></script>
+<script src="../js/average.js"></script>
+<script src="../js/simulator.js"></script>
+<script src="../js/refresh.js"></script>
+<script>includeHTML();</script>
+
+</body>
+</html>
