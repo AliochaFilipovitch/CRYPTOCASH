@@ -41,8 +41,18 @@
       <div class="card-body">
         <h3 class="card-title">Average of Market</h3>
         <p class="card-text">
-          <div id="average"></div>
+          <div id="average" style="color: red;"></div>
           <button type="button" class="btn btn-primary btn-sm" id="refreshAverage">Refresh</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Best<small class="text-muted"> change in 1hr.</small></h3>
+        <p class="card-text">
+          <div id="best" style="color: red;"></div>
+          <button type="button" class="btn btn-primary btn-sm" id="refreshBest">Refresh</button>
         </p>
       </div>
     </div>
@@ -82,6 +92,7 @@
 <script src="../js/ajax.js"></script>
 <script src="../js/time.js"></script>
 <script src="../js/average.js"></script>
+<script src="../js/best.js"></script>
 <script src="../js/simulator.js"></script>
 <script src="../js/refresh.js"></script>
 <script>includeHTML();</script>
